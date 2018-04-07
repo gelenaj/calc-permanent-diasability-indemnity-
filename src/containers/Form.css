@@ -3,32 +3,50 @@ body{
 }
 
 h1{
-  border-bottom: 6px solid blue;
-}
-
-gridContainer {
-  display: grid;
-  grid-row-gap: 10px;
-  padding: 10px;
-  background-color: white;
-  max-width: 960px;
-  color:red;
-}
-
-/* div.gridContainer {
-  display: grid;
-  grid-row-gap: 10px;
-  padding: 10px;
-  background-color: white;
-  max-width: 960px;
-} */
-div .gridItem {
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
   text-align: center;
-  background-color: red;
+  border-bottom: 2px solid #ccddff;
+}
+h4{
+  text-align: center;
+}
+
+.submit{
+  text-align: center;
+}
+
+button{
+  width: 15%;
+  text-align: center;
+}
+
+label{
+  margin-right: 10px;
+}
+
+.FormHeading{
+  border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px;
+    border-radius: 5px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-row-gap: 10px;
+  padding: 10px;
+  max-width: 960px;
+}
+
+
+.gridItem {
+  border: 1px solid #A9A9A9;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+  background-color: white;
 }
 div.input{
   width:20%;
+  height: auto;
 }

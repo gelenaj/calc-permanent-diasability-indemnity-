@@ -64,28 +64,27 @@ errorClass(error) {
   render(){
     return(
       <div className={classes.FormBody, classes.gridContainer}>
-      <div className={classes.gridItem}>
-        <h1 className={classes.FormHeading}>Calculate Permanent Disability Indemnity</h1>
+      <div className={classes.gridItem, classes.FormHeading}>
+        <h1>Calculate Permanent Disability Indemnity</h1>
         <h4>Fill out the form to calculate P.M.I.</h4>
       </div>
       <form>
         <div className={classes.gridItem}>
           <label>Please enter the Whole Person Impairment Standard:</label>
-          <br/>
           <input
           name="wpi"
           type="text"
           value={this.state.wpi}
           onChange={this.handleWpiInput}
-          className={classes.gridItem}
           />
           <FormErrors formErrors={this.state.formErrors} />
         <br/>
-          <button type="submit" className="btn btn-primary" disabled={!this.state.formValid} onClick={this.handleClick} >Enter</button>
     </div>
           </form>
           <p>{this.state.wpiResult} </p>
-
+          <div className={classes.submit}>
+            <button type="submit" className="btn btn-primary" disabled={!this.state.formValid} onClick={this.handleClick} >Calculate</button>
+          </div>
       </div>
 
 
