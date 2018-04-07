@@ -84,7 +84,6 @@ errorClass(error) {
           <button type="submit" className="btn btn-primary" disabled={!this.state.formValid} onClick={this.handleClick} >Enter</button>
     </div>
           </form>
-
           <p>{this.state.wpiResult} </p>
 
       </div>
